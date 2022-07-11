@@ -41,5 +41,3 @@ class Deck
 end
 
 deck = Deck.new
-puts deck.cards
-puts deck.cards.length
