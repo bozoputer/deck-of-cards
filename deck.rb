@@ -20,11 +20,13 @@ class Deck
 
   def draw
     # get the next card and remove it from the deck
-
+    @cards.shift
   end
 
   def shuffle
     # return all cards to the deck, and randomize the order
+    initialize
+    @cards.shuffle
   end
 
   def cheat
