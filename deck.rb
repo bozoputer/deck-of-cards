@@ -26,11 +26,12 @@ class Deck
   def shuffle
     # return all cards to the deck, and randomize the order
     initialize
-    @cards.shuffle
+    @cards.shuffle!
   end
 
   def cheat
     # see the next card, but don't discard it
+    puts @cards.first
   end
 end
 
