@@ -13,3 +13,13 @@ EOF
 
 deck = Deck.new
 deck.shuffle
+
+while deck.cards.length > 0
+  card = deck.draw
+  if card['J'] || card['Q'] || card['K'] || card['A']
+    puts "You drew a #{card}. Sorry, no more draws."
+    break
+  else
+    puts "You drew a #{card}"
+  end
+end
