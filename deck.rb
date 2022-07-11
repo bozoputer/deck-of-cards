@@ -33,6 +33,13 @@ class Deck
     # see the next card, but don't discard it
     puts @cards.first
   end
+
+  def cards
+    # return the remaining cards in the deck
+    @cards
+  end
 end
 
 deck = Deck.new
+puts deck.cards
+puts deck.cards.length
